@@ -1,0 +1,7 @@
+products = response.css('div.product-item-info')
+item_id = product.css("a::attr(data-id)").get()
+item_name = product.css("a::attr(data-name)").get()
+item_price = product.css("a::attr(data-price)").get()
+product_link = products.css("a::attr(href)").get()
+image_url = products.css('img::attr(src)').get()
+next_page_url = response.css("a[title=Next] ::attr(href)").get()
